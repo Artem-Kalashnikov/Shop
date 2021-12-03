@@ -20,10 +20,6 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
-.hide {
-  display: none;
-}
-
 .container {
   max-width: 1160px;
   width: 100%;
@@ -402,6 +398,46 @@ footer .wrap {
   color: #666;
 }
 
+#popup {
+  background: rgba(246, 246, 247, 0.85);
+  width: 460px;
+  height: 690px;
+  position: fixed;
+  top: 14.120000000000001vh;
+  left: 55.25vw;
+  display: none;
+  position: absolute;
+  border-radius: 15px;
+}
+
+#popup:target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__title {
+  font-size: 28px;
+  max-width: 255px;
+  font-weight: bold;
+}
+
+.popup__login {
+  padding: 15px 42px;
+  border-radius: 35px;
+  background-color: #30acf1;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.popup__reg {
+  text-decoration: underline;
+}
+
 @media (max-width: 1170px) {
   .buttons {
     display: flex;
@@ -421,6 +457,7 @@ footer .wrap {
     font-weight: bold;
     color: #000;
     padding-right: 20vw;
+    user-select: none;
   }
 
   /* Checked */
@@ -443,6 +480,7 @@ footer .wrap {
   }
 
   .form {
+    margin: 0 auto;
     display: none;
   }
 
@@ -466,6 +504,18 @@ footer .wrap {
 
   .footer__copy--item:nth-child(1) {
     margin-left: 39px;
+  }
+
+  #popup {
+    background: rgba(246, 246, 247, 0.85);
+    width: 460px;
+    height: 690px;
+    position: fixed;
+    top: 24.12vh;
+    left: 24.25vw;
+    display: none;
+    position: absolute;
+    border-radius: 15px;
   }
 }
 
@@ -567,44 +617,4 @@ footer .wrap {
   .card__item--color {
     flex-wrap: wrap;
   }
-}
-
-#popup {
-  background: rgba(246, 246, 247, 0.85);
-  width: 460px;
-  height: 690px;
-  position: fixed;
-  top: 16.12vh;
-  left: 56.25vw;
-  display: none;
-  position: absolute;
-  border-radius: 15px;
-}
-
-#popup:target {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.popup__title {
-  font-size: 28px;
-  max-width: 255px;
-  font-weight: bold;
-}
-
-.popup__login {
-  padding: 15px 42px;
-  border-radius: 35px;
-  background-color: #30acf1;
-  font-size: 17px;
-  line-height: 1.35;
-  color: #fff;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.popup__reg {
-  text-decoration: underline;
 }
