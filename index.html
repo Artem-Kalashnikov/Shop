@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="head">
+          <div class="head__logo">
+            <img src="./img/ic-logo.svg" alt="logo" />
+          </div>
+          <div class="head__phone">+7 (930) 354-43-74</div>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="buttons">
+        <div class="buttons__btn shop" data-switch-btn="basket">
+          <input id="basket-1" type="radio" name="buttons" value="1" checked />
+          <label for="basket-1">Корзина</label>
+        </div>
+
+        <div class="buttons__btn order hide" data-switch-btn="order">
+          <input id="order-2" type="radio" name="buttons" value="2" />
+          <label for="order-2">Оформить заказ</label>
+        </div>
+      </div>
+      <div class="display">
+        <div class="left basket-block" data-switch-block="basket">
+          <div class="basket">
+            <div class="basket__h2">
+              <h1>Корзина</h1>
+              <div class="basket__h2--quantity">10 товаров на 100 000р</div>
+            </div>
+            <button class="basket__button">
+              <span class="basket__button--text"> Oчистить корзизу</span>
+              <img
+                src="./img/ic-close.svg"
+                alt="Х"
+                class="basket__button--logo"
+              />
+            </button>
+          </div>
+          <div class="card">
+            <div class="card__item">
+              <div class="card__item--foto">
+                <img src="./img/girl1.png" alt="girl" />
+              </div>
+              <div class="card__item--info">
+                <div class="card__item--heading">
+                  <div class="card__item--text">
+                    <span class="card__item--title">
+                      КМ-01 НСД Костюм мужской (кулирка) </span
+                    ><br />
+                    <span class="card__item--size">
+                      Размер <span class="card__item--number">46/48</span>
+                    </span>
+                  </div>
+                  <div class="card__item--logo">
+                    <img
+                      src="./img/ic-delete.svg"
+                      alt="close"
+                      class="card__item--close"
+                    />
+                  </div>
+                </div>
+                <div class="card__item--price">
+                  <div class="card__item--one">9990₽</div>
+                  <div class="card__item--quantity">
+                    <div class="card__item--min">
+                      <img src="./img/ic-minus.svg" alt="min" />
+                    </div>
+                    <div class="card__item--number">100</div>
+                    <div class="card__item--max">
+                      <img src="./img/ic-plus.svg" alt="max" />
+                    </div>
+                  </div>
+                  <div class="card__item--total">100 000₽</div>
+                </div>
+                <div class="card__item--color">
+                  <div class="card__item--text">Цвет</div>
+                  <div class="card__item--btn">
+                    <input
+                      id="radio-1"
+                      type="radio"
+                      name="ks"
+                      value="1"
+                      checked
+                    />
+                    <label for="radio-1">Зелёный</label>
+                  </div>
+
+                  <div class="card__item--btn">
+                    <input id="radio-2" type="radio" name="ks" value="2" />
+                    <label for="radio-2">Красный</label>
+                  </div>
+
+                  <div class="card__item--btn">
+                    <input id="radio-3" type="radio" name="ks" value="3" />
+                    <label for="radio-3">Синий</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__item--foto">
+                <img src="./img/girl2.png" alt="girl" />
+              </div>
+              <div class="card__item--info">
+                <div class="card__item--heading">
+                  <div class="card__item--text">
+                    <span class="card__item--title">
+                      C-20 НСД Сорочка ночная (кулирка) </span
+                    ><br />
+                    <span class="card__item--size">
+                      Размер <span class="card__item--number">46/48</span>
+                    </span>
+                  </div>
+                  <div class="card__item--logo">
+                    <img
+                      src="./img/ic-delete.svg"
+                      alt="close"
+                      class="card__item--close"
+                    />
+                  </div>
+                </div>
+                <div class="card__item--price">
+                  <div class="card__item--one">9990₽</div>
+                  <div class="card__item--quantity">
+                    <div class="card__item--min">
+                      <img src="./img/ic-minus.svg" alt="min" />
+                    </div>
+                    <div class="card__item--number">100</div>
+                    <div class="card__item--max">
+                      <img src="./img/ic-plus.svg" alt="max" />
+                    </div>
+                  </div>
+                  <div class="card__item--total">100 000₽</div>
+                </div>
+                <div class="card__item--color">
+                  <div class="card__item--text">Цвет</div>
+                  <div class="card__item--btn">
+                    <input
+                      id="radio-4"
+                      type="radio"
+                      name="s"
+                      value="4"
+                      checked
+                    />
+                    <label for="radio-4">Зелёный</label>
+                  </div>
+
+                  <div class="card__item--btn">
+                    <input id="radio-5" type="radio" name="s" value="5" />
+                    <label for="radio-5">Красный</label>
+                  </div>
+
+                  <div class="card__item--btn">
+                    <input id="radio-6" type="radio" name="s" value="6" />
+                    <label for="radio-6">Синий</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__item--foto">
+                <img src="./img/girl3.png" alt="girl" />
+              </div>
+              <div class="card__item--info">
+                <div class="card__item--heading">
+                  <div class="card__item--text">
+                    <span class="card__item--title">
+                      Х-027 НСД Халат женский (кулирка) </span
+                    ><br />
+                    <span class="card__item--size">
+                      Размер <span class="card__item--number">46/48</span>
+                    </span>
+                  </div>
+                  <div class="card__item--logo">
+                    <img
+                      src="./img/ic-delete.svg"
+                      alt="close"
+                      class="card__item--close"
+                    />
+                  </div>
+                </div>
+                <div class="card__item--price">
+                  <div class="card__item--one">9990₽</div>
+                  <div class="card__item--quantity">
+                    <div class="card__item--min">
+                      <img src="./img/ic-minus.svg" alt="min" />
+                    </div>
+                    <div class="card__item--number">100</div>
+                    <div class="card__item--max">
+                      <img src="./img/ic-plus.svg" alt="max" />
+                    </div>
+                  </div>
+                  <div class="card__item--total">100 000₽</div>
+                </div>
+                <div class="card__item--color">
+                  <div class="card__item--text">Цвет</div>
+                  <div class="card__item--btn">
+                    <input
+                      id="radio-7"
+                      type="radio"
+                      name="x"
+                      value="7"
+                      checked
+                    />
+                    <label for="radio-7">Зелёный</label>
+                  </div>
+
+                  <div class="card__item--btn">
+                    <input id="radio-8" type="radio" name="x" value="8" />
+                    <label for="radio-8">Красный</label>
+                  </div>
+
+                  <div class="card__item--btn">
+                    <input id="radio-9" type="radio" name="x" value="9" />
+                    <label for="radio-9">Синий</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__total">
+              <div class="card__total--price">
+                Итого: <span class="card__total--nomber">10 999₽</span>
+              </div>
+              <div class="card__total--type">
+                Тип цены: <span class="total__small--text">Мелкий опт</span>
+                <span class="total__small--number"> от 3 000 ₽</span>
+                <span class="total__opt--text"> Опт</span>
+                <span class="total__opt--number"> от 15 000 ₽</span>
+                <span class="total__opt--balance">( ещё 4 001 ₽)</span>
+              </div>
+              <div class="card__total--profit">
+                Ваша выгода:
+                <span class="total__profit--balance">0 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form not-auth" data-switch-block="order">
+          <div class="form__h2">Оформление заказа</div>
+          <form action="">
+            <input type="text" class="form__name" placeholder="ФИО*" />
+            <input type="email" class="form__email" placeholder="Ваша почта*" />
+            <input type="tel" class="form__phone" placeholder="Ваш телефон*" />
+            <textarea placeholder="Комментарии к заказу"></textarea>
+            <div class="form__text">
+              Соберем ваш заказ за 1-2 дня. Поможем выбрать вам самую выгодную
+              транспортную компанию. Стоимость доставки уточнит менеджер
+            </div>
+            <a href="#popup">
+              <div class="form__btn" type="submit">Оформить заказ</div></a
+            >
+            <div class="form__text--gray">
+              Оформляя заказ, я согласен на обработку персональных данных
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="wrap">
+          <div class="footer__copy">
+            <div class="footer__copy--heading">
+              <div class="footer__copy--logo">
+                <img src="./img/ic-logo.svg" alt="" />
+              </div>
+              <div class="footer__copy--link">
+                <div class="footer__copy--item">Условия оплаты</div>
+                <div class="footer__copy--item">Условия доставки</div>
+                <div class="footer__copy--item">Обмен и возврат</div>
+              </div>
+            </div>
+            <div class="footer__copy--copyright">
+              2021 Несаден-Стиль - трикотаж от производителя
+            </div>
+          </div>
+          <div class="footer__contact">
+            <div class="footer__contact--heading">Наши контакты</div>
+            <div class="footer__contact--info">
+              <div class="footer__contact--phone">+7 930 354 43 74</div>
+              <div class="footer__contact--email">info@nesaden-style.ru</div>
+            </div>
+            <div class="footer__contact--location">
+              г. Иваново, ул. Павла Большевикова, д. 27, стр. 8
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="popup">
+      <div class="popup__title">Войдите, чтобы оформить заказ</div>
+      <a href="" class="popup__login">Войти</a>
+      <a href="" class="popup__reg">Зарегистрироваться</a>
+    </div>
+  </body>
+</html>
